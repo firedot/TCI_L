@@ -7,4 +7,5 @@ python:
   - "3.6-dev"
 install:
   - pip3 install -r ops/requirements.txt
-script: pytest
+script:
+    - pytest tests/test_app.py
