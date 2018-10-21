@@ -1,8 +1,8 @@
 # test_app.py
 
 import pytest
-from app import *
+import app
 
 def test_app():
-    app = app()
-    assert app.title == "Dash"
+    dash_test=app.app.layout
+    assert 'Dash' in str(dash_test)
